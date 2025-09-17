@@ -35,90 +35,46 @@ img,video,iframe{
 
 /* ---------------- Sidebar ---------------- */
 
+/* Sidebar container (no static background here anymore) */
 .sidebar{
   position:fixed;
   top:0;
   left:0;
   width:300px;
   height:100vh;
-  background:url('/assets/img/sidebar-bg.jpg') center/cover no-repeat;
   color:#fff;
   overflow-y:auto;
 }
 
+/* Two background layers that crossfade */
+.sidebar .bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  transition:opacity 1.5s ease;
+  opacity:1;
+  z-index:0;            /* sits at the very back */
+}
+.sidebar .bg.hidden{ opacity:0; }
+
+/* Dark overlay above backgrounds for readability */
 .sidebar::before{
   content:"";
   position:absolute;
-  top:0; left:0; right:0; bottom:0;
+  inset:0;
   background:rgba(0,0,0,0.45);
-  z-index:0;
+  z-index:1;
 }
 
+/* Content above overlay */
 .sidebar-inner{
   position:relative;
-  z-index:1;
+  z-index:2;
   padding:40px 28px;
   display:flex;
   flex-direction:column;
   height:100%;
-}
-
-.avatar{
-  width:120px;
-  height:120px;
-  border-radius:60px;
-  background-size:cover;
-  background-position:center;
-  border:4px solid rgba(255,255,255,.25);
-  box-shadow:0 8px 24px rgba(0,0,0,.25);
-  margin-bottom:16px;
-}
-
-.brand{
-  font-family:Merriweather,serif;
-  font-size:28px;
-  margin:4px 0 6px;
-}
-
-.tagline{
-  opacity:.9;
-  margin:0 0 20px;
-}
-
-.nav{
-  display:flex;
-  flex-direction:column;
-  margin:20px 0;
-  gap:12px;
-}
-
-.nav a{
-  color:#fff;
-  font-weight:600;
-}
-
-.socials{
-  margin-top:auto;
-  display:flex;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.socials a{
-  color:#fff;
-  font-size:1.2rem;
-  opacity:.9;
-}
-
-.site-footer{
-  border-top:1px solid #eee;
-}
-
-.site-footer .inner{
-  max-width:1100px;
-  margin:0 auto;
-  padding:18px 24px;
-  color:var(--muted);
 }
 
 /* ---------------- MainContent ---------------- */
