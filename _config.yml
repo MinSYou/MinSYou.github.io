@@ -1,0 +1,37 @@
+title: "Min You — Portfolio"
+description: "Animation • Photography • Cinematography"
+url: "https://MinSYou.github.io"   # change to your custom domain later
+baseurl: ""                        # keep empty for user site
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections (optional for projects)
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults for layouts
+defaults:
+  - scope: {path: "", type: "posts"}
+    values: {layout: post}
+  - scope: {path: "", type: "projects"}
+    values: {layout: project}
+
+# Social links (edit me)
+social:
+  github: "https://github.com/MinSYou"
+  instagram: "https://instagram.com/"
+  linkedin: "https://www.linkedin.com/"
+
+# Sidebar content
+sidebar:
+  name: "Min You"
+  tagline: "A portfolio of animation, photography, and cinematography."
+  email: "you@example.com"

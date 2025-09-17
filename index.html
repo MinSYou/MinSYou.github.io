@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+---
+
+<div class="feed">
+  {% for post in site.posts %}
+  <article class="card">
+    <a class="no-underline" href="{{ post.url | relative_url }}">
+      <h2 class="title">{{ post.title }}</h2>
+    </a>
+    <p class="date">{{ post.date | date: "%-d %B %Y" }}</p>
+
+    {% if post.cover %}
+      <img class="hero" src="{{ post.cover | relative_url }}" alt="{{ post.title }} cover">
+    {% elsif post.video_poster %}
+      <img class="hero" src="{{ post.video_poster | relative_url }}" alt="{{ post.title }} poster">
+    {% endif %}
+
+    <div class="excerpt">
+      {{ post.excerpt | strip_html | truncate: 220 }}
+    </div>
+
+    <p><a class="readmore" href="{{ post.url | relative_url }}">Read More</a></p>
+  </article>
+  {% endfor %}
+</div>
