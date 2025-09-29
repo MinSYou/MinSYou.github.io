@@ -1,0 +1,199 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css');
+
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth !important;
+    transition: all 0.25s ease;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5vmax !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #363636 !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black !important;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+}
+
+#navbar {
+    .navbar-burger {
+        span:nth-child(2) {
+            left: calc(50%);
+            width: 8px;
+        }
+    }
+}
+
+.is-active {
+    font-weight: bold;
+}
+
+.columns {
+    .button {
+        margin: 0.5rem !important;
+    }
+}
+
+hr {
+    margin: 1rem auto;
+    height: 1px;
+}
+
+.column {
+    margin: auto 0.5rem;
+    padding: 0.5rem;
+}
+
+.searchResult {
+    a {
+        .title {
+            text-decoration: underline;
+        }
+    }
+}
+
+/* =======================
+   HERO SECTION
+   ======================= */
+#hero {
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+
+    &::before {
+        filter: blur(0.15rem);
+        background-image: url({{site.heroimage}});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        opacity: 0.25;
+        content: "";
+    }
+}
+
+#hero .title,
+#hero .subtitle {
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);  /* keep text readable */
+}
+
+blockquote {
+  color: #000 !important;
+}
+
+.marker blockquote,
+.marker p {
+  color: #000 !important;
+}
+
+/* =======================
+   SECTION BACKGROUNDS
+   ======================= */
+#about {
+    background-color: #ffffff;   /* pure white */
+    padding: 4rem 1rem;
+}
+
+#contact {
+    background-color: #f7f7f7;   /* slightly darker white for contrast */
+    padding: 4rem 1rem;
+    border-top: 1px solid #e0e0e0; /* optional subtle divider */
+}
+
+/* =======================
+   GALLERY GRID
+   ======================= */
+.gallery-grid {
+  column-count: 3;           /* 3 columns on desktop */
+  column-gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  break-inside: avoid;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive columns */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+/* =======================
+   LIGHTBOX
+   ======================= */
+#lightbox {
+  display: none;                 /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+#lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+

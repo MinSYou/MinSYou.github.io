@@ -1,0 +1,101 @@
+# WhatATheme
+markdown: kramdown
+
+# URL of the Site
+url: "https://minsyou.github.io"
+# Base URL of the Site (keep empty for user/organization site)
+baseurl: ""
+
+# Title of the Site
+title: Min You
+# Description of the Site
+description: Photographer, Animator and Data Science Student
+# URL of Image of the Site
+site-image: /assets/images/meta.jpg   # 🔥 remove /WhatATheme
+
+# Keywords of the Site
+site-keywords: Portfolio, Animation, Design, Development
+# URL for the Image of custom Favicon
+favicon-url: /assets/images/favicon.png
+
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: /assets/images/background19.png
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: minyous1205@gmail.com
+facebook_username: Min You 
+instagram_username: min_you_s
+linkedin_username: youm05
+github_username:  MinSYou
+youtube_channel_id: UCooItvxwki25KMDEyY2175w
+
+# Google Analytics
+google-analytics: UA-163806439-1
+
+# Disqus
+disqus-shortname: minyous
+
+# Name of the Author
+author-name: Min You
+# URL for the Image of the Author
+author-image: /assets/images/pfp.jpg
+# 60 Words About the Author
+author-about: A highly versatile professional with expertise in creative design, 3D animation (Blender, Unreal Engine 5), delivering client-focused projects.
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://www.linkedin.com/in/youm05/
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+
+
+
+
+
+
