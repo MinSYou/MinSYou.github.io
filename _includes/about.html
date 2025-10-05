@@ -1,17 +1,17 @@
-<section class="section" id="about" style="padding-top: 6rem; padding-bottom: 6rem;">
+<section class="section" id="about" style="padding-top: 3rem; padding-bottom: 5rem;">
   <div class="container">
 
     <!-- Section Title -->
-    <div class="has-text-centered" style="margin-bottom: 3rem;">
-      <h2 class="title is-2 has-text-weight-bold">About Me</h2>
-      <p class="subtitle is-5 has-text-grey">
+    <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+      <h2 class="title is-2 has-text-weight-bold" style="margin-bottom: 0.5rem;">About Me</h2>
+      <p class="subtitle is-5 has-text-grey" style="margin-bottom: 0.75rem;">
         Exploring creativity through technology, art, and innovation.
       </p>
-      <hr style="width: 80px; height: 3px; background: #3273dc; border: none; margin: 1rem auto;">
+      <hr style="width: 70px; height: 3px; background: #3273dc; border: none; margin: 0.5rem auto;">
     </div>
 
     <!-- About Me Content -->
-    <div class="content is-size-5" style="max-width: 850px; margin: 0 auto;">
+    <div class="content is-size-5" style="max-width: 850px; margin: 0 auto; text-align: left;">
       <p>
         Hi! I’m <strong>Minseok You</strong>, a multidisciplinary creator blending <strong>technology, design, and storytelling</strong>. 
         My journey began in visual arts and animation but expanded into <strong>data-driven creativity</strong> and <strong>digital innovation</strong>.
@@ -38,30 +38,30 @@
     </div>
 
     <!-- Skills / Interests Grid -->
-    <div class="columns is-multiline has-text-centered" style="margin-top: 4rem;">
+    <div class="columns is-multiline is-centered has-text-centered" style="margin-top: 4rem;">
       <div class="column is-one-quarter-desktop is-half-tablet">
-        <div class="box" style="transition: transform 0.3s ease; cursor: default;">
+        <div class="box about-box">
           <span class="icon is-large"><i class="fas fa-cube fa-2x"></i></span>
           <h3 class="title is-5">3D Animation</h3>
           <p>Blender, Unreal Engine 5, Maya, Cinema 4D</p>
         </div>
       </div>
       <div class="column is-one-quarter-desktop is-half-tablet">
-        <div class="box" style="transition: transform 0.3s ease;">
+        <div class="box about-box">
           <span class="icon is-large"><i class="fas fa-robot fa-2x"></i></span>
           <h3 class="title is-5">Robotics & Tech</h3>
           <p>MARS, MURC, MACS — building and flying drones & rovers</p>
         </div>
       </div>
       <div class="column is-one-quarter-desktop is-half-tablet">
-        <div class="box" style="transition: transform 0.3s ease;">
+        <div class="box about-box">
           <span class="icon is-large"><i class="fas fa-video fa-2x"></i></span>
           <h3 class="title is-5">Videography</h3>
           <p>Sony A6700 | DaVinci Resolve | Storytelling through visuals</p>
         </div>
       </div>
       <div class="column is-one-quarter-desktop is-half-tablet">
-        <div class="box" style="transition: transform 0.3s ease;">
+        <div class="box about-box">
           <span class="icon is-large"><i class="fas fa-database fa-2x"></i></span>
           <h3 class="title is-5">Data Science</h3>
           <p>Python, SQL, R — analytics-driven creativity</p>
@@ -72,10 +72,26 @@
   </div>
 </section>
 
-<!-- Optional subtle hover animation for boxes -->
+<!-- Optional CSS tweaks -->
 <style>
-  #about .box:hover {
+  #about .box.about-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  #about .box.about-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Make section heading slightly closer to top without too much gap */
+  #about .title.is-2 {
+    margin-top: 0;
+  }
+
+  /* Center grid alignment on large screens */
+  @media screen and (min-width: 1024px) {
+    #about .columns.is-centered {
+      justify-content: center;
+    }
   }
 </style>
