@@ -1,9 +1,86 @@
-<!-- Reach Out / Contact Section -->
-<section class="section has-background-dark has-text-centered" id="contact" style="padding: 3rem 1rem 2rem;">
+<!-- ABOUT ME SECTION -->
+<section class="section" id="about" style="padding-top: 7rem; padding-bottom: 5rem;">
   <div class="container">
-    <h2 class="title is-3 has-text-white" style="margin-bottom: 0.75rem;">Reach Out to Me</h2>
-    <p class="subtitle is-5 has-text-grey-light" style="margin-bottom: 1.5rem;">
-      Interested in collaborating or have a question? Let’s connect!
+
+    <!-- Section Title -->
+    <div class="has-text-centered" style="margin-bottom: 0.5rem;">
+      <h2 class="title is-2 has-text-weight-bold" style="margin-top: -0.5rem; margin-bottom: 0.5rem;">
+        About Me
+      </h2>
+    </div>
+
+    <!-- About Me Content -->
+    <div class="content is-size-5" style="max-width: 850px; margin: 0 auto; text-align: left;">
+      <p>
+        Hi! I’m <strong>Minseok You</strong>, a multidisciplinary creator blending 
+        <strong>technology, design, and storytelling</strong>. 
+        My journey began in visual arts and animation but expanded into 
+        <strong>data-driven creativity</strong> and <strong>digital innovation</strong>.
+      </p>
+
+      <p>
+        I’m currently studying a <strong>Bachelor of Information Technology (Data Science)</strong> 
+        at <strong>Macquarie University</strong>, where I actively contribute to student communities 
+        such as the <strong>Macquarie Aerospace Rover Society (MARS)</strong>, 
+        <strong>Robotics Club (MURC)</strong>, and the 
+        <strong>Association of Computing Students (MACS)</strong>.
+      </p>
+
+      <p>
+        Alongside academics, I’m passionate about <strong>3D animation</strong>, 
+        <strong>videography</strong>, and <strong>interactive media</strong>. 
+        My projects merge cinematic storytelling with real-time rendering tools 
+        like <strong>Blender</strong> and <strong>Unreal Engine 5</strong>, bridging creativity 
+        and technical precision.
+      </p>
+
+      <p>
+        I aim to build works that connect engineering precision with artistic expression—whether 
+        crafting animated shorts, designing society merchandise, or experimenting with AI-driven visuals.
+      </p>
+    </div>
+
+    <!-- Skills / Interests Grid -->
+    <div class="columns is-multiline is-centered has-text-centered" style="margin-top: 3.5rem;">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box about-box">
+          <span class="icon is-large"><i class="fas fa-cube fa-2x"></i></span>
+          <h3 class="title is-5">3D Animation</h3>
+          <p>Blender, Unreal Engine 5, Maya, Cinema 4D</p>
+        </div>
+      </div>
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box about-box">
+          <span class="icon is-large"><i class="fas fa-robot fa-2x"></i></span>
+          <h3 class="title is-5">Robotics & Tech</h3>
+          <p>MARS, MURC, MACS — building and flying drones & rovers</p>
+        </div>
+      </div>
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box about-box">
+          <span class="icon is-large"><i class="fas fa-video fa-2x"></i></span>
+          <h3 class="title is-5">Videography</h3>
+          <p>Sony A6700 | DaVinci Resolve | Storytelling through visuals</p>
+        </div>
+      </div>
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box about-box">
+          <span class="icon is-large"><i class="fas fa-database fa-2x"></i></span>
+          <h3 class="title is-5">Data Science</h3>
+          <p>Python, SQL, R — analytics-driven creativity</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- GET IN TOUCH SECTION (Replaces Reach Out to Me) -->
+<section class="section has-background-dark has-text-centered" id="contact" style="padding: 4rem 1rem;">
+  <div class="container">
+    <h2 class="title is-3 has-text-white">Get In Touch</h2>
+    <p class="subtitle is-5 has-text-grey-light" style="margin-bottom: 2rem;">
+      I’m always open to new opportunities, collaborations, or just a friendly chat. Connect with me through the links below!
     </p>
 
     <div class="buttons is-centered" style="margin-bottom: 1.5rem;">
@@ -21,34 +98,76 @@
       </a>
     </div>
 
-    <hr style="background: rgba(255,255,255,0.2); margin: 1.5rem auto 0; width: 80%;">
-    <p class="has-text-grey-light" style="margin-top: 0.75rem; font-size: 0.9rem;">
+    <hr style="background: rgba(255,255,255,0.2); margin: 2rem auto 0; width: 80%;">
+    <p class="has-text-grey-light" style="margin-top: 1rem; font-size: 0.9rem;">
       © 2025 Minseok You — Designed & Built with passion and code 💻
     </p>
   </div>
 </section>
 
+<!-- CSS Adjustments -->
 <style>
-  /* ---- Contact Section Adjustments ---- */
+  /* ABOUT SECTION BOX EFFECT */
+  #about .box.about-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+  }
+  #about .box.about-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Slightly lower About section under navbar */
+  #about {
+    margin-top: 2.5rem;
+  }
+
+  /* About section heading spacing */
+  #about .title.is-2 {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px; /* 5–10px gap above text */
+  }
+
+  /* Center grid for skills */
+  @media screen and (min-width: 1024px) {
+    #about .columns.is-centered {
+      justify-content: center;
+    }
+  }
+
+  /* CONTACT SECTION STYLING */
   #contact {
-    background-color: #2e2e2e; /* consistent dark footer */
-    padding-bottom: 2rem !important; /* reduce bottom whitespace */
-    margin-bottom: 0; /* prevent extra gap below */
+    background-color: #2e2e2e; /* same gray as old Reach Out footer */
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin-top: 0;
   }
 
-  /* Make sure next section doesn't overlap */
-  #contact + section {
-    margin-top: 0 !important;
-    padding-top: 1rem !important;
+  #contact h2.title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
   }
 
-  /* Responsive tweaks */
-  @media screen and (max-width: 768px) {
-    #contact h2 {
-      font-size: 1.75rem;
-    }
-    #contact .subtitle {
-      font-size: 1rem;
-    }
+  #contact .subtitle {
+    color: #ccc;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+  }
+
+  #contact .button {
+    margin: 0.3rem;
+  }
+
+  #contact hr {
+    background: rgba(255,255,255,0.2);
+    height: 1px;
+    border: none;
+  }
+
+  #contact p.has-text-grey-light {
+    color: #aaa !important;
   }
 </style>
