@@ -1,77 +1,81 @@
-<section class="section" id="about" style="padding-top: 5rem; padding-bottom: 5rem;">
+<section class="section" id="about" style="padding-top: 6rem; padding-bottom: 6rem;">
   <div class="container">
+
     <!-- Section Title -->
-    <div class="has-text-centered">
+    <div class="has-text-centered" style="margin-bottom: 3rem;">
       <h2 class="title is-2 has-text-weight-bold">About Me</h2>
       <p class="subtitle is-5 has-text-grey">
         Exploring creativity through technology, art, and innovation.
       </p>
-      <hr style="width: 60px; height: 3px; background: #3273dc; border: none; margin: 1rem auto 2rem;">
+      <hr style="width: 80px; height: 3px; background: #3273dc; border: none; margin: 1rem auto;">
     </div>
 
-    <!-- Two Column Layout -->
-    <div class="columns is-vcentered">
-      <!-- Profile Image -->
-      <div class="column is-one-third has-text-centered">
-        <figure class="image is-256x256" style="margin: 0 auto;">
-          <img class="is-rounded" src="/assets/images/profile.jpg" alt="Profile Photo of Minseok You">
-        </figure>
-      </div>
+    <!-- About Me Content -->
+    <div class="content is-size-5" style="max-width: 850px; margin: 0 auto;">
+      <p>
+        Hi! I’m <strong>Minseok You</strong>, a multidisciplinary creator blending <strong>technology, design, and storytelling</strong>. 
+        My journey began in visual arts and animation but expanded into <strong>data-driven creativity</strong> and <strong>digital innovation</strong>.
+      </p>
 
-      <!-- About Text -->
-      <div class="column">
-        <div class="content is-size-5">
-          <p>
-            Hi! I’m <strong>Minseok You</strong>, a multidisciplinary creator blending <strong>technology, design, and storytelling</strong>. 
-            My journey began in visual arts and animation, but it quickly expanded into <strong>data-driven creativity</strong> and <strong>digital innovation</strong>.
-          </p>
-          <p>
-            I’m currently studying a <strong>Bachelor of Information Technology (Data Science)</strong> at <strong>Macquarie University</strong>, 
-            where I actively contribute to student communities such as the <strong>Macquarie Aerospace Rover Society (MARS)</strong>, 
-            <strong>Robotics Club (MURC)</strong>, and the <strong>Association of Computing Students (MACS)</strong>.
-          </p>
-          <p>
-            Alongside academics, I’m passionate about <strong>3D animation</strong>, <strong>videography</strong>, and <strong>interactive media</strong>. 
-            My work often merges cinematic storytelling with real-time rendering tools like <strong>Blender</strong> and <strong>Unreal Engine 5</strong>.
-          </p>
-          <p>
-            I aim to build projects that connect engineering precision with artistic expression—whether it’s crafting an animated short, 
-            designing society merchandise, or experimenting with AI-driven visuals.
-          </p>
-        </div>
-      </div>
+      <p>
+        I’m currently studying a <strong>Bachelor of Information Technology (Data Science)</strong> at <strong>Macquarie University</strong>, 
+        where I actively contribute to student communities such as the 
+        <strong>Macquarie Aerospace Rover Society (MARS)</strong>, 
+        <strong>Robotics Club (MURC)</strong>, and the 
+        <strong>Association of Computing Students (MACS)</strong>.
+      </p>
+
+      <p>
+        Alongside academics, I’m passionate about <strong>3D animation</strong>, <strong>videography</strong>, and <strong>interactive media</strong>. 
+        My projects merge cinematic storytelling with real-time rendering tools like <strong>Blender</strong> and <strong>Unreal Engine 5</strong>, 
+        bridging creativity and technical precision.
+      </p>
+
+      <p>
+        I aim to build works that connect engineering precision with artistic expression—whether crafting animated shorts, 
+        designing society merchandise, or experimenting with AI-driven visuals.
+      </p>
     </div>
 
     <!-- Skills / Interests Grid -->
-    <div class="columns is-multiline has-text-centered" style="margin-top: 3rem;">
-      <div class="column is-one-quarter">
-        <div class="box">
+    <div class="columns is-multiline has-text-centered" style="margin-top: 4rem;">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box" style="transition: transform 0.3s ease; cursor: default;">
           <span class="icon is-large"><i class="fas fa-cube fa-2x"></i></span>
           <h3 class="title is-5">3D Animation</h3>
           <p>Blender, Unreal Engine 5, Maya, Cinema 4D</p>
         </div>
       </div>
-      <div class="column is-one-quarter">
-        <div class="box">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box" style="transition: transform 0.3s ease;">
           <span class="icon is-large"><i class="fas fa-robot fa-2x"></i></span>
           <h3 class="title is-5">Robotics & Tech</h3>
           <p>MARS, MURC, MACS — building and flying drones & rovers</p>
         </div>
       </div>
-      <div class="column is-one-quarter">
-        <div class="box">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box" style="transition: transform 0.3s ease;">
           <span class="icon is-large"><i class="fas fa-video fa-2x"></i></span>
           <h3 class="title is-5">Videography</h3>
           <p>Sony A6700 | DaVinci Resolve | Storytelling through visuals</p>
         </div>
       </div>
-      <div class="column is-one-quarter">
-        <div class="box">
+      <div class="column is-one-quarter-desktop is-half-tablet">
+        <div class="box" style="transition: transform 0.3s ease;">
           <span class="icon is-large"><i class="fas fa-database fa-2x"></i></span>
           <h3 class="title is-5">Data Science</h3>
-          <p>Python, SQL, R, and analytics-driven design</p>
+          <p>Python, SQL, R — analytics-driven creativity</p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
+<!-- Optional subtle hover animation for boxes -->
+<style>
+  #about .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+</style>
