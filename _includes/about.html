@@ -2,14 +2,14 @@
   <div class="container">
 
     <!-- Section Title -->
-    <div class="has-text-centered" style="margin-bottom: 2rem;">
-      <h2 class="title is-2 has-text-weight-bold" style="margin-top: 0; margin-bottom: 0.4rem;">
+    <div class="has-text-centered" style="margin-bottom: 1.5rem;">
+      <h2 class="title is-2 has-text-weight-bold" style="margin-top: -1rem; margin-bottom: 0.3rem;">
         About Me
       </h2>
-      <p class="subtitle is-5 has-text-grey" style="margin-bottom: 0.5rem;">
+      <p class="subtitle is-5 has-text-grey" style="margin-bottom: 0.4rem;">
         Exploring creativity through technology, art, and innovation.
       </p>
-      <hr style="width: 70px; height: 3px; background: #3273dc; border: none; margin: 0.4rem auto;">
+      <hr style="width: 70px; height: 3px; background: #3273dc; border: none; margin: 0.3rem auto;">
     </div>
 
     <!-- About Me Content -->
@@ -89,4 +89,22 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   }
 
-  /* Extra padding to move the whole section d*
+  /* Keep section slightly lower under navbar */
+  #about {
+    margin-top: 2.5rem;
+  }
+
+  /* Heading lift */
+  #about .title.is-2 {
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin-top: -0.5rem !important;
+  }
+
+  /* Center grid */
+  @media screen and (min-width: 1024px) {
+    #about .columns.is-centered {
+      justify-content: center;
+    }
+  }
+</style>
